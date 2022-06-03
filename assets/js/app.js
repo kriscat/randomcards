@@ -49,11 +49,11 @@ const partFour = ["assets/img/4_1.jpg",
     "assets/img/4_9.jpg",
     "assets/img/4_10.jpg",];
 
-window.onload = () => generateRandomPicture(partTwo);
+window.onload = () => generateRandomPicture();
 
-button.addEventListener("click", () => generateRandomPicture(partTwo));
+button.addEventListener("click", () => generateRandomPicture());
 
-function generateRandomPicture(partOne) {
+function generateRandomPicture() {
     let randomNum = Math.floor(Math.random() * partOne.length);
     let randomNum2 = Math.floor(Math.random() * partTwo.length);
     let randomNum3 = Math.floor(Math.random() * partThree.length);
