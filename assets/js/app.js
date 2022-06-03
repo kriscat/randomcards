@@ -53,14 +53,18 @@ window.onload = () => generateRandomPicture(partTwo);
 
 button.addEventListener("click", () => generateRandomPicture(partTwo));
 
-function generateRandomPicture(partTwo) {
-    let randomNum = Math.floor(Math.random() * partTwo.length);
+function generateRandomPicture(partOne) {
+    let randomNum = Math.floor(Math.random() * partOne.length);
+    let randomNum2 = Math.floor(Math.random() * partTwo.length);
+    let randomNum3 = Math.floor(Math.random() * partThree.length);
+    let randomNum4 = Math.floor(Math.random() * partFour.length);
     card1.setAttribute("src", partOne[randomNum]);
-    card2.setAttribute("src", partTwo[randomNum]);
-    card3.setAttribute("src", partThree[randomNum]);
-    card4.setAttribute("src", partFour[randomNum]);
+    card2.setAttribute("src", partTwo[randomNum2]);
+    card3.setAttribute("src", partThree[randomNum3]);
+    card4.setAttribute("src", partFour[randomNum4]);
 
 }
+
 
 
 
